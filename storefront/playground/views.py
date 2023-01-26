@@ -5,4 +5,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your models here.
 def say_hello(request): 
-    return HttpResponse("Hello from a galaxy far away")
+    x=1 
+    y=2
+    return render(request, 'hello.html')
